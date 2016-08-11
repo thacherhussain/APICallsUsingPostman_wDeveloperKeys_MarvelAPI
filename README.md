@@ -1,4 +1,4 @@
-##Learning API GET Calls with Postmand and the Marvel API
+##Learning API GET Calls with Postman and the Marvel API
 
 When using APIs sometimes you will need to obtain/use developer keys. When using these in an application you will usually have to include the public key and a hashed version of the private key plus some other variable(s).
 
