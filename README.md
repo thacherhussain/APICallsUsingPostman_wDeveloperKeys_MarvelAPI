@@ -17,7 +17,7 @@ Per the Marvel API docs, the formula to construct a valid call is as follows:
   * `hash=ffd275c5130566a2916217b101f26150`
     * The hash value is a "hashed" or obfuscated version of (ts)(private key)(public key) using the md5 hash.
 
-**Optional Note (if you're interested) Quick note on developer keys and hashing:** Hashing, or A cryptographic hash function, is a mathematical algorithm that maps data of arbitrary size to a bit string of a fixed size (a hash function) which is designed to also be one-way function, that is, a function which is infeasible to invert. [wikipedia](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+**Optional Note (if you're interested) Quick note on developer keys and hashing:** Hashing, or A cryptographic hash function, is a mathematical algorithm that maps data of arbitrary size to a bit string of a fixed size (a hash function) which is designed to also be one-way function, that is, a function which is infeasible to invert. [Hash Functions on wikipedia](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
 
 There is a lot more to this, but this is all you need to know for this exercise is that you're going to use your public key, private key, and a timestamp to create a hash to be used in your API call to the Marvel API.
 
@@ -32,7 +32,7 @@ To test that you are doing it correctly put in these test values
 * private key = abcd
 * public key = 1234
 
-Using a web-based md5 hash tool found [here](http://www.md5hashgenerator.com/).
+Using a web-based md5 hash tool found [here](http://www.md5hashgenerator.com/). If you have Node.js installed you can also use node to create your hash (find details on this in the other markdown file in this directory)
 
 The Hash generation formula given to us from the Marvel API is: (timestamp)(private key)(public key). Therefore, the value we enter into the text box on the md5 site to be hashed is `1abcd1234`
 
